@@ -1,5 +1,5 @@
 # Gutbusters
-Pipeline for mining phages/viruses and bacterias in the Human Gut from metagenome assemblies
+Pipeline for mining phages/viruses and bacteria from the Human Gut from metagenome assemblies
 # Installation
 We understand the complexity of having a pipeline and what it means for the installation. That's why we work with containers. the installation as simple as download a big file using `wget` (or your favorite command).
 ### Gutbusters bacteria
