@@ -26,8 +26,8 @@ In case of bacteria, the input is is the metagenome assembly + the bams associat
 ```
 apptainer run gutbustersB_v1.sif \
   --in test_data/contigs.fna \
-  --bam "$BF" \
-  --outdir $OUTDIR \
+  --bam my_bam_folder \
+  --outdir my_output_folder_name \
   --threads 8 \
   --annot-level 1 \
   --debug
