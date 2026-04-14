@@ -1,4 +1,7 @@
-# Gutbusters
+
+<img src="gutbusters.png" alt="Alt Text" style="width:50%; height:auto;text-align: center;">
+
+
 Pipeline for mining phages/viruses and bacteria from the Human Gut.
 
 # Installation
