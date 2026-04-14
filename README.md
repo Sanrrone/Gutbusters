@@ -1,5 +1,5 @@
 
-<img src="gutbusters.png" alt="Alt Text" style="width:50%; height:auto;text-align: center;">
+<img src="gutbusters.png" alt="Alt Text" style="width:40%; height:auto;text-align: center;">
 
 
 Pipeline for mining phages/viruses and bacteria from the Human Gut.
@@ -35,3 +35,10 @@ apptainer run gutbustersB_v1.sif \
   --annot-level 1 \
   --debug
 ```
+
+# How it works
+### For Bacteria
+<img src="bpipe.png" alt="Alt Text" style="width:60%; height:auto;text-align: center;">
+
+### For Viruses
+<img src="vpipe.png" alt="Alt Text" style="width:60%; height:auto;text-align: center;">
