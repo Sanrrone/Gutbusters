@@ -32,8 +32,8 @@ apptainer run gutbustersB_v1.sif \
   --bam my_bam_folder \
   --outdir my_output_folder_name \
   --threads 8 \
-  --annot-level 1 \
-  --debug
+  --min-len 500 \
+  --annot-level 1
 ```
 
 # How it works
