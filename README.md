@@ -23,8 +23,16 @@ apptainer run gutbusters_v1.sif \
 --threads 8
 ```
 
-In case of bacteria, the input is is the metagenome assembly + the bams associated to it (reads mapped back to the assembly. 1 or more).
+* --in: Path to the input contig FASTA file (.fna/.fa/.fasta) containing assembled contigs to analyze.
+
+* --outdir: Output directory where all generated results, annotations, summaries, and intermediate files will be written.
+
+* --threads: Number of CPU threads to use during processing. Higher values increase parallelization and reduce runtime.
+
+
 ### Gutbusters bacteria
+
+In case of bacteria, the input is is the metagenome assembly + the bams associated to it (reads mapped back to the assembly. 1 or more).
 
 ```
 apptainer run gutbustersB_v1.sif \
@@ -32,9 +40,21 @@ apptainer run gutbustersB_v1.sif \
   --bam my_bam_folder \
   --outdir my_output_folder_name \
   --threads 8 \
-  --min-len 500 \
+  --min-len 2000 \
   --annot-level 1
 ```
+
+* --in: Path to the input contig FASTA file (.fna/.fa/.fasta) containing assembled contigs to analyze.
+
+* --bam: Directory containing BAM alignment files used for coverage/depth calculations. BAM files should be indexed (.bai) and correspond to reads mapped against the input contigs.
+
+* --outdir: Output directory where all generated results, annotations, summaries, and intermediate files will be written.
+
+* --threads: Number of CPU threads to use during processing. Higher values increase parallelization and reduce runtime.
+
+* --min-len: Minimum Bins length when recovering genomes (in base pairs). Bins shorter than this threshold will be excluded.
+
+* --annot-level: Annotation sensitivity/stringency level. Lower values prioritize broader and faster annotation, while higher levels may apply stricter or more detailed annotation procedures (Eggnog).
 
 # How it works
 ### For Bacteria
